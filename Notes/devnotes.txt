@@ -1,0 +1,55 @@
+Basis Swap
+Bond Option
+Bond Option - Ascot
+Bond Total Return Swap (Fixed Income)
+Buy Sell Back
+Cap Floor – CMS/Contingent
+CDS ABS Index
+CDS Index
+CDS Index Tranche
+CDS
+Dividend Swap
+Equity Index Option
+Equity Index Vanilla Option
+Equity Swap
+Equity Vanilla Option
+FRA (Fixed Income)
+Fx Barrier Option
+Fx Digital Option
+Fx Exotic Option
+Fx Touch Option
+FX
+Fx Vanilla Option
+Inflation Swap
+Recovery Lock
+Repo
+Spread Cap Floor
+Swaption – Option/Contingent/ForwardPremium
+Vanilla IRS
+Variance Swap
+OTC Equity Index Future Trade 
+
+
+row['Date']
+row['Date entered']
+row['Reference']
+row['Description']
+row['Amount']
+
+    upload_to_db(r'C:\Users\chann\Documents\CreditBills\Jan2021.csv')
+    upload_to_db(r'C:\Users\chann\Documents\CreditBills\Feb2021.csv')
+    upload_to_db(r'C:\Users\chann\Documents\CreditBills\Mar2021.csv')
+    upload_to_db(r'C:\Users\chann\Documents\CreditBills\Apr2021.csv')
+    upload_to_db(r'C:\Users\chann\Documents\CreditBills\May2021.csv')
+	upload_to_db(r'C:\Users\chann\Documents\CreditBills\Latest_Jun2021.csv')
+	
+	/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [Date]
+      ,[Date_entered]
+      ,[Reference]
+      ,[Description]
+      ,[Amount]
+      ,[MonthBal]
+  FROM [FinAnalysis].[dbo].[MonthlyCredit]
+
+  delete from MonthlyCredit
